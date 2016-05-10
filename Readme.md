@@ -134,6 +134,7 @@ someModule.stream(function(err, stdout, stderr) {
 
   form.append('file', stdout, {
     filename: 'unicycle.jpg',
+    relativePath: 'uploads', // optional, defaults to ''
     contentType: 'image/jpg',
     knownLength: 19806
   });
